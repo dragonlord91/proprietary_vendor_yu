@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
     vendor/yu/tomato/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/yu/tomato/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/yu/tomato/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/yu/tomato/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/yu/tomato/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/yu/tomato/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/yu/tomato/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/yu/tomato/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/yu/tomato/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/yu/tomato/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -128,6 +132,21 @@ PRODUCT_COPY_FILES += \
     vendor/yu/tomato/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/yu/tomato/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/yu/tomato/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/yu/tomato/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
     vendor/yu/tomato/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/yu/tomato/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/yu/tomato/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -273,7 +292,9 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     libtime_genoff \
+    ims \
     shutdownlistener \
+    imscmlibrary \
     TimeService \
     qcrilmsgtunnel \
     qcnvitems \
