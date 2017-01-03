@@ -311,7 +311,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/tomato/proprietary/vendor/app/imssettings/imssettings.apk:system/vendor/app/imssettings/imssettings.apk
 
 PRODUCT_PACKAGES += \
-#    ims \
-#    imssettings \
+    ims \
+    imssettings \
     imscmlibrary
 endif
